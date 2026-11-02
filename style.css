@@ -32,3 +32,10 @@ body{font-size:16px}
 .story-portrait img{display:block;margin:auto}
 @media(max-width:1000px){.services{grid-template-columns:1fr 1fr}.hero-right p,.hero-quote{font-size:14px}.hero-left h2{font-size:28px}.hero-right{padding-left:18px}.stats{gap:10px}.stats small{font-size:10px}}
 @media(max-width:700px){.hero-meta,.eyebrow{font-size:10px}.nav nav a{font-size:17px}.menu{font-size:14px}.hero-right p,.hero-quote{font-size:14px}.hero-right{padding:22px 0 30px}.hero-right .button{font-size:14px}.stats small{font-size:10px}.services p,.process p,.about-mini p,.principles p,.story p,.detail-copy p{font-size:14px}.services h3{font-size:24px}.process{gap:22px 16px}.process-step{gap:10px}.process-step p{font-size:14px}.section-heading .text-link{font-size:12px}.project-caption>span{font-size:10px}.about-mini{grid-template-columns:1fr}.about-mini img{height:260px;object-fit:contain}.principles h3{font-size:16px}.page-heading p{font-size:16px}.contact-details>a{font-size:14px}.faq summary{font-size:16px}.faq details p{font-size:15px}.footer-bottom{font-size:11px}.contact-links{font-size:14px}.portrait-caption{font-size:8px}}
+
+/* Reference composition: a free-standing cutout in front of a separate circle. */
+.portrait-stage{overflow:visible;align-self:stretch}
+.portrait-stage img{content:url('/assets/davies-cutout.webp');position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:112%;height:112%;max-height:none;object-fit:contain;object-position:center bottom;border-radius:0;mask-image:none;mix-blend-mode:normal;filter:none;z-index:2}
+.portrait-stage .orb{width:90%;top:auto;bottom:8%;left:5%;z-index:0;background:radial-gradient(circle at 40% 30%,#164fc4,#0c2456 68%,#080c14);animation:breathe 8s ease-in-out infinite}
+.portrait-caption{z-index:3}
+@media(max-width:700px){.portrait-stage{overflow:visible}.portrait-stage img{width:115%;height:108%}.portrait-stage .orb{width:100%;left:0;bottom:8%}}
